@@ -72,7 +72,7 @@ def save_category_data(data_list, category_name, count=1000):
 
 def main():
     # JSON文件路径
-    json_file_path = r"E:\GitHub\Repositories\AI\data\test\tg_message_data.json"
+    json_file_path = r"E:\GitHub\Repositories\AI\data\test\deepweb_post_data.json"
     
     # 读取数据
     data_list = read_json_data(json_file_path)
@@ -116,7 +116,7 @@ def main():
         
         # 选择前四个类别并随机抽取数据
         print("\n\n从前四个类别中各随机抽取1000条数据:")
-        top_categories = sorted_categories[:6]
+        top_categories = sorted_categories[:8]
         for category, count in top_categories:
             save_category_data(data_list, category, 1000)
 
